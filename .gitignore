@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+report.[0-9].[0-9].[0-9].[0-9].json
 
 # Runtime data
 pids
@@ -70,13 +70,13 @@ typings/
 
 # dotenv environment variables file
 #.env
-#.env.test
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
 # Next.js build output
-.next
+#.next
 
 # Nuxt.js build / generate output
 .nuxt
@@ -84,7 +84,7 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
+# Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
@@ -98,11 +98,11 @@ dist
 .fusebox/
 
 # DynamoDB Local files
-.dynamodb/
+#.dynamodb/
 
 # TernJS port file
 .tern-port
 /.vscode
 /client/node_modules
 #/client/.env
-/client/.vscode
+#/client/.vscode
