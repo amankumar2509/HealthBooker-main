@@ -2,12 +2,7 @@ const express = require("express");
 const auth = require("../middleware/auth");
 const userController = require("../controllers/userController");
 const userRouter = express.Router();
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+
 
 userRouter.get("/getuser/:id", auth, userController.getuser);
 
