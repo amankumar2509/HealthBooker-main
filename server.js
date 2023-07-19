@@ -9,9 +9,7 @@ const path = require("path");
 const notificationRouter = require("./routes/notificationRouter");  
 const app = express();
 const port = process.env.PORT || 5000;
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: *');
-header('Access-Control-Allow-Headers: *');
+
 
 app.use(cors());
 app.use(express.json());
